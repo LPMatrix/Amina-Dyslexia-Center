@@ -1,3 +1,146 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+html{
+	font-size: 62.5%;
+}
+.nav{
+	display: flex;
+	align-items: center;
+	padding-left: 5.3rem;
+	padding-right: 8rem;
+	justify-content: flex-end;
+
+	&:first-child{
+		justify-content: flex-start;
+	};
+
+	&__logo{
+		height: 10rem;
+		width: 12.7rem;
+	}
+	&__list{
+		list-style-type: none;
+		text-transform: uppercase;
+		display: flex;
+		line-height: 2.56rem;
+	  	align-items: center;
+	  	margin-left: auto;
+	}
+	&__list li a{
+		text-decoration: none;
+		color: $color-primary;
+		font-size: 1.4rem;
+		margin-left: 3.3rem;
+		line-height: 2.56rem;
+	}
+}
+
+
+.banner{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/banner.jpg');
+	height: 77vh;
+	background-position: center;
+	color: $text-white;
+	padding: 3rem 23.6rem;
+	text-align: center;
+
+	&__heading{
+		text-transform: capitalize;
+		font-size: 8rem;
+		font-weight: 600;
+	}
+
+	&__lead{
+		font-size: 3.16rem;
+	}
+
+	&__sub{
+		font-size:1.8rem;
+	}
+}
+.btn{
+	color: $text-white;
+	padding: 1.5rem 7.5rem;
+	font-size: 1.8rem;
+	border: none;
+
+	&__round{
+		border-radius: 10rem;
+	}
+
+	&__primary{
+		background-color: #56CCF2;
+
+	}
+}
+
+.heading{
+	margin: 4.9rem 0 9rem;
+	text-align: center;
+	font-size: 4.8rem;
+}
+
+.updates{
+	padding: 8.1rem;
+	display: flex;
+	flex-wrap: wrap;
+
+	&__card{
+		height: 37.5rem;
+		width: 42vw;
+	    display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.8rem;
+		text-align: center;
+		padding: 2rem;
+		color: $text-black;
+
+		&-image1{
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/1.jpg');
+			background-position: center;
+			color: $text-white;
+			font-size: 2.2rem;
+		}
+		&-image2{
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/2.jpg');
+			background-position: center;
+			color: $text-white;
+			font-size: 2.2rem;
+		}
+	}
+}
+
+.footer{
+	background-color: $bg-dark;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: $text-white;
+	text-align: center;
+
+	&__heading{
+		font-size: 2.4rem;
+	}
+	&__list{
+		list-style-type: none;
+		text-transform: uppercase;
+		display: flex;
+		line-height: 2.56rem;
+	  	justify-content: center;
+	}
+	&__list li a{
+		text-decoration: none;
+		font-size: 1.4rem;
+		margin-left: 3.3rem;
+		line-height: 2.56rem;
+		color: $text-white;
+	}
+	&__group{
+		display: flex;    
+		justify-content: center;
+    	font-size: 1.4rem;
+    	margin-top: 6.6rem;
+	}
+}
