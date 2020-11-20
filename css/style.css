@@ -483,4 +483,60 @@ html {
     display: flex;
     justify-content: center;
     font-size: 1.4rem;
-    margin-top: 6.6rem; }
+    margin-top: 6.6rem;
+    margin-bottom: 4.4rem; }
+
+.services {
+  background: linear-gradient(to bottom, rgba(86, 204, 242, 0.8), rgba(86, 204, 242, 0.8)), url("../img/services.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5.3rem;
+  padding: 5.3rem 20rem;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .services__card {
+    font-size: 1.8rem;
+    width: calc(100vh - 44rem); }
+    .services__card p {
+      color: #4F4F4F; }
+    .services__card h4 {
+      font-size: 2.2rem; }
+
+.about {
+  margin-top: 12rem;
+  padding: 7.5rem 0;
+  color: #FFF;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/about.jpg");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .about p {
+    font-size: 1.6rem; }
+  .about h4 {
+    font-size: 4.8rem; }
+
+.contact {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/contact.png");
+  background-position: center;
+  color: #FFF;
+  padding: 3rem 23.6rem;
+  text-align: center; }
+  .contact button {
+    margin-top: 9.6rem; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 9.1rem;
+  gap: 1.2rem; }
+  .gallery__image {
+    width: 100%;
+    height: 30rem; }
+  .gallery img {
+    display: inline-block;
+    height: 100%;
+    width: 100%; }
